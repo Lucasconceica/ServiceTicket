@@ -1,7 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-//using WebApi.Models;
+using WebApi.Models;
 namespace Ticket_Service.data;
 
-public class applicationDbContext
+public class ApplicationDbContext : DbContext
 {
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+
+    public DbSet<Ticket_Suporte> Ticket_Suporte { get; set; }
 }
