@@ -7,7 +7,7 @@ public class Ticket
     public int Id { get; set; }
 
     [Required]
-    public string Problema { get; set; }
+    public string Problema { get; set; } 
 
     [Required]
     public string Descrissão { get; set; }
